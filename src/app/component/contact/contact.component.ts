@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Person} from '../../model/person.model';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public people: Person[] = [];
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  ngOnInit(): void {
+    const user: Person = {
+      firstName: 'Mateusz',
+      lastName: 'Stanczak'
+    };
+
+    const userTwo: Person = {
+      firstName: 'Adam',
+      lastName: 'Mickiewicz'
+    };
+
+    this.people.push(user, userTwo);
+  }
 }
