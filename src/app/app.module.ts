@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { TodoListComponent } from './component/todo-list/todo-list.component';
+import { TodoItemComponent } from './component/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    TodoListComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
